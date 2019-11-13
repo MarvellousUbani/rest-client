@@ -29,6 +29,13 @@ class UsersController < ApplicationController
         format.html { render :new }
         format.json { render json: @user.errors, status: :unprocessable_entity }
       end
-    end
+  end
+
+   def update
+    @name="I am the update action"
+  end
+
+  def destroy
+    @name="I am the destroy action"
   end
 end
